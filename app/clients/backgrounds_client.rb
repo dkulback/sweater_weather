@@ -2,12 +2,12 @@ class BackgroundsClient
   def self.get_url(url, location)
     conn = Faraday.new(url: 'https://api.pexels.com') do |faraday|
       faraday.headers['Authorization'] = ENV['photo_api_key']
-      faraday.params[:query] = location
+      faraday.params[:query] = "#{location},skyline"
       faraday.params[:per_page] = 1
     end
 
     response = conn.get(url)
-    json = JSON.parse(response.body, symbolize_names: true)
+    JSON.parse(response.body, symbolize_names: true)
   end
 
   def self.get_background(location)
