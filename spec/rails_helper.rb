@@ -93,7 +93,7 @@ VCR.configure do |config|
 
   config.allow_http_connections_when_no_cassette = false
   config.filter_sensitive_data('fake_api_key') { ENV['weather_api_key'] }
-  config.filter_sensitive_data('fake_api_key') { ENV['map_api_key'] }
-  config.filter_sensitive_data('fake_api_key') { ENV['photo_api_key'] }
+  config.filter_sensitive_data('fake_key') { ENV['map_api_key'] }
+  config.filter_sensitive_data('fake_api_key_2') { ENV['photo_api_key'] }
   config.configure_rspec_metadata!
 end
