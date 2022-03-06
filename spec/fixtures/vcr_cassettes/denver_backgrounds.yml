@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - fake_api_key
+      - fake_api_key_2
       User-Agent:
       - Faraday v2.2.0
       Accept-Encoding:
@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 06 Mar 2022 02:41:36 GMT
+      - Sun, 06 Mar 2022 06:23:53 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -29,7 +29,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 6e77bbb74f9c8eab-DEN
+      - 6e7901561c6f8eb1-DEN
       Access-Control-Allow-Origin:
       - "*"
       Cache-Control:
@@ -37,11 +37,11 @@ http_interactions:
       Etag:
       - W/"d6606698f4762d6303e63ee36ef9f5ea"
       Set-Cookie:
-      - __cf_bm=g6r8SUtqJls6MCC.uAd29FSrtlqryspfgEVhTeEUeDo-1646534496-0-AYQtkwE0Y0v/Gc4I+lFYJJKv86eHQE3ay6ChiAu95shBCLpJ+0mmutAP0ms7NLh4b4mfVdfYCmbMrJIC/GvYqds=;
-        path=/; expires=Sun, 06-Mar-22 03:11:36 GMT; domain=.pexels.com; HttpOnly;
+      - __cf_bm=vqcZrvAdgnCxUWPPgxEXNxVRdFYsS8gNe2CS9BlpBAk-1646547833-0-AWde+NqZWA242yWgmrPexzrDvZuKnjHPAskA44M8stomFBCF6pHGs13yzt9QvSYQJisewAKozGzG6tkYwfg4wp8=;
+        path=/; expires=Sun, 06-Mar-22 06:53:53 GMT; domain=.pexels.com; HttpOnly;
         Secure; SameSite=None
-      - _mkra_stck=mysql%3A1646534501.0655084; path=/; max-age=10; expires=Sun, 06
-        Mar 2022 02:41:46 GMT; HttpOnly
+      - _mkra_stck=mysql%3A1646547838.576651; path=/; max-age=10; expires=Sun, 06
+        Mar 2022 06:24:03 GMT; HttpOnly
       Cf-Cache-Status:
       - DYNAMIC
       Expect-Ct:
@@ -51,11 +51,11 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '20000'
       X-Request-Id:
-      - 8622aa99-bb24-45d4-94b1-2a43ba0fbed9
+      - 6a54d82e-e2b7-4f85-af00-26f11a62d494
       X-Runtime:
-      - '0.023921'
+      - '0.049337'
       X-Server:
-      - alpaca
+      - anteater
       Vary:
       - Accept-Encoding
       Server:
@@ -66,5 +66,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"page":1,"per_page":1,"photos":[{"id":3184423,"width":4004,"height":6000,"url":"https://www.pexels.com/photo/photo-of-people-holding-each-other-s-hands-3184423/","photographer":"fauxels","photographer_url":"https://www.pexels.com/@fauxels","photographer_id":1281351,"avg_color":"#8B7D77","src":{"original":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg","large2x":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"alt":"Photo
         Of People Holding Each Other''s Hands"}],"total_results":2234,"next_page":"https://api.pexels.com/v1/search/?page=2\u0026per_page=1\u0026query=denver%2Cco"}'
-  recorded_at: Sun, 06 Mar 2022 02:41:36 GMT
+  recorded_at: Sun, 06 Mar 2022 06:23:53 GMT
 recorded_with: VCR 6.0.0
