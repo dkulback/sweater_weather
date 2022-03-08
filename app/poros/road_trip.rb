@@ -6,7 +6,7 @@ class RoadTrip
       @travel_time = 'Impossible'
     else
       @travel_time = data[:formattedTime]
-      @real_time = data[:realTime]
+      @real_time = data[:time]
     end
     if data[:locations].present?
       @start = data[:locations][0][:adminArea5] + ',' + data[:locations][0][:adminArea3]
