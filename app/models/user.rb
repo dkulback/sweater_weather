@@ -3,7 +3,7 @@ class User < ApplicationRecord
   validates_uniqueness_of :email, case_sensitive: false
 
   has_secure_password
-  before_validation :set_api_key
+  before_create :set_api_key
 
   private
 
