@@ -1,21 +1,32 @@
 class RoadTrip
-  attr_reader :travel_time, :real_time, :start, :end
+  attr_reader :travel_time, :start, :end, :data
 
   def initialize(data)
-    if data[:routeError][:errorCode] == 2
-      @travel_time = 'Impossible'
+    @data = data
+  end
+
+  def travel_time
+    if data[:formattedTime].present?
+      data[:formattedTime]
     else
-      @travel_time = data[:formattedTime]
-      @real_time = data[:time]
-    end
-    if data[:locations].present?
-      @start = data[:locations][0][:adminArea5] + ',' + data[:locations][0][:adminArea3]
-      @end = data[:locations][1][:adminArea5] + ',' + data[:locations][1][:adminArea3]
+      'Impossible'
     end
   end
 
+  def real_time
+    data[:time]
+  end
+
+  def start
+    data[:locations][0][:adminArea5] + ',' + data[:locations][0][:adminArea3]
+  end
+
+  def end_point
+    data[:locations][1][:adminArea5] + ',' + data[:locations][1][:adminArea3]
+  end
+
   def format_time_hour
-    (real_time / 3600.to_f).round
+    (real_time / 3600.to_f).round if real_time
   end
 
   def to_days
@@ -26,7 +37,7 @@ class RoadTrip
     if @travel_time == 'Impossible'
       nil
     else
-      coordinates = GeocoderServicer.convert_location(@end)
+      coordinates = GeocoderServicer.convert_location(end_point)
       ForecastServicer.forecast(coordinates[:lat], coordinates[:lng])
     end
   end
