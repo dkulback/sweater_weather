@@ -18,11 +18,19 @@ class RoadTrip
   end
 
   def start
-    data[:locations][0][:adminArea5] + ',' + data[:locations][0][:adminArea3]
+    if data[:locations].present?
+      data[:locations][0][:adminArea5] + ',' + data[:locations][0][:adminArea3]
+    else
+      ''
+    end
   end
 
   def end_point
-    data[:locations][1][:adminArea5] + ',' + data[:locations][1][:adminArea3]
+    if data[:locations].present?
+      data[:locations][1][:adminArea5] + ',' + data[:locations][1][:adminArea3]
+    else
+      ''
+    end
   end
 
   def format_time_hour
@@ -34,7 +42,7 @@ class RoadTrip
   end
 
   def forecast
-    if @travel_time == 'Impossible'
+    if travel_time == 'Impossible'
       nil
     else
       coordinates = GeocoderServicer.convert_location(end_point)
