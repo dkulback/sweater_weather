@@ -4,7 +4,7 @@ location or where you plan on traveling to next. This application expose four in
 1. Forecast for a location
 2. Background image at that location
 3. User creation
-4. Planing a road trip
+4. Planning a road trip
 
 
 ## Deployment
