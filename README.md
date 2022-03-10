@@ -52,6 +52,4 @@ Run `bundle exec rspec` to run the test suite
 
 - [Darren Kulback](https://github.com/dkulback)
 ## IDE
-<p>
-  ![Neovim](https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=white)
-</p>
+![Neovim](https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=white)
