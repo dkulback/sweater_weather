@@ -11,8 +11,8 @@ location or where you plan on traveling to next. This application expose four in
 * http://localhost:3000
 
 ## Technologies
-Ruby on Rails
-Postgresql
+![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white)
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 
 
 ## APIs Used
@@ -31,7 +31,7 @@ Postgresql
 7. Create an account with [Pexels](https://www.farmsense.net/api/frost-date-api/)
 9. Install the Figaro gem: `bundle exec figaro install`
 10. Add your API key to the `application.yml` created by Figaro:
-  ```rb
+  ```yml
   OPENWEATHER_KEY: your_api_key
   PEXELS_KEY: your_api_key
   ```
