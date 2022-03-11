@@ -91,6 +91,7 @@ VCR.configure do |config|
     match_requests_on: %i[body method uri]
   }
 
+  c.configure_rspec_metadata!
   config.allow_http_connections_when_no_cassette = false
   config.filter_sensitive_data('fake_api_key') { ENV['weather_api_key'] }
   config.filter_sensitive_data('fake_key') { ENV['map_api_key'] }
