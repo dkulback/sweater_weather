@@ -1,0 +1,261 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.mapquestapi.com/geocoding/v1/address?key=fake_key&location=denver,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Fri, 11 Mar 2022 23:18:32 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '1735'
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, must-revalidate
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Geocodetransactioncount:
+      - '1'
+      Last-Modified:
+      - Fri, 11 Mar 2022 23:18:32 GMT
+      Pragma:
+      - no-cache
+      Reversegeocodetransactioncount:
+      - '0'
+      Set-Cookie:
+      - JSESSIONID=76E3866CCB6A76EA3BEC33750A81EB52; Path=/; HttpOnly
+      Status:
+      - success
+      Transactionweight:
+      - '1.0'
+    body:
+      encoding: UTF-8
+      string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2022 MapQuest,
+        Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
+        2022 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"denver,co"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Denver","adminArea5Type":"City","adminArea4":"Denver
+        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282041090","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=fake_key&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-1&scalebar=true&zoom=12&rand=1881380804"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"","adminArea5Type":"City","adminArea4":"Denver
+        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A4XAX","geocodeQuality":"COUNTY","dragPoint":false,"sideOfStreet":"N","linkId":"282932003","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=fake_key&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-2&scalebar=true&zoom=9&rand=-2120114781"}]}]}'
+  recorded_at: Fri, 11 Mar 2022 23:18:32 GMT
+- request:
+    method: get
+    uri: http://openlibrary.org/search.json?fields=title,publisher,isbn&limit=5&q=denver,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Fri, 11 Mar 2022 23:18:32 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Method:
+      - GET, OPTIONS
+      Access-Control-Max-Age:
+      - '86400'
+      X-Ol-Stats:
+      - '"SR 1 0.190 TT 0 0.191"'
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "numFound": 41900,
+            "start": 0,
+            "numFoundExact": true,
+            "docs": [
+                {
+                    "title": "Denver, Co",
+                    "isbn": [
+                        "9780762507849",
+                        "0762507845"
+                    ],
+                    "publisher": [
+                        "Universal Map Enterprises"
+                    ]
+                },
+                {
+                    "title": "Photovoltaic safety, Denver, CO, 1988",
+                    "isbn": [
+                        "0883183668",
+                        "9780883183663"
+                    ],
+                    "publisher": [
+                        "American Institute of Physics"
+                    ]
+                },
+                {
+                    "title": "University of Denver Co 2007",
+                    "isbn": [
+                        "9781427401687",
+                        "1427401683"
+                    ],
+                    "publisher": [
+                        "College Prowler"
+                    ]
+                },
+                {
+                    "title": "Denver Co Deluxe Flip Map",
+                    "isbn": [
+                        "0762557362",
+                        "9780762557363"
+                    ],
+                    "publisher": [
+                        "Universal Map Enterprises"
+                    ]
+                },
+                {
+                    "title": "Insight Fleximap Denver, CO (Insight Fleximaps)",
+                    "isbn": [
+                        "9812582622",
+                        "9789812582621"
+                    ],
+                    "publisher": [
+                        "American Map Corporation"
+                    ]
+                }
+            ],
+            "num_found": 41900,
+            "q": "denver,co",
+            "offset": null
+        }
+  recorded_at: Fri, 11 Mar 2022 23:18:32 GMT
+- request:
+    method: get
+    uri: http://openlibrary.org/search.json?fields=title,publisher,isbn&limit=5&q=denver,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Fri, 11 Mar 2022 23:18:32 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Method:
+      - GET, OPTIONS
+      Access-Control-Max-Age:
+      - '86400'
+      X-Ol-Stats:
+      - '"SR 1 0.201 TT 0 0.202"'
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "numFound": 41900,
+            "start": 0,
+            "numFoundExact": true,
+            "docs": [
+                {
+                    "title": "Denver, Co",
+                    "isbn": [
+                        "9780762507849",
+                        "0762507845"
+                    ],
+                    "publisher": [
+                        "Universal Map Enterprises"
+                    ]
+                },
+                {
+                    "title": "Photovoltaic safety, Denver, CO, 1988",
+                    "isbn": [
+                        "0883183668",
+                        "9780883183663"
+                    ],
+                    "publisher": [
+                        "American Institute of Physics"
+                    ]
+                },
+                {
+                    "title": "University of Denver Co 2007",
+                    "isbn": [
+                        "9781427401687",
+                        "1427401683"
+                    ],
+                    "publisher": [
+                        "College Prowler"
+                    ]
+                },
+                {
+                    "title": "Denver Co Deluxe Flip Map",
+                    "isbn": [
+                        "0762557362",
+                        "9780762557363"
+                    ],
+                    "publisher": [
+                        "Universal Map Enterprises"
+                    ]
+                },
+                {
+                    "title": "Insight Fleximap Denver, CO (Insight Fleximaps)",
+                    "isbn": [
+                        "9812582622",
+                        "9789812582621"
+                    ],
+                    "publisher": [
+                        "American Map Corporation"
+                    ]
+                }
+            ],
+            "num_found": 41900,
+            "q": "denver,co",
+            "offset": null
+        }
+  recorded_at: Fri, 11 Mar 2022 23:18:33 GMT
+recorded_with: VCR 6.0.0
