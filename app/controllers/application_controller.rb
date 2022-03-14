@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::API
+  include ActionController::MimeResponds
   include ExceptionHandler
   def check_location
     if params[:location].nil? || params[:location].blank?
