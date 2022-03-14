@@ -37,6 +37,8 @@ module SweaterWeather
     config.time_zone = 'Mountain Time (US & Canada)'
 
     config.action_mailer.perform_caching = true
-    config.cache_store = :redis_cache_store, { url: (ENV['REDIS_URL'] || 'redis://localhost:6379/0') }
+    config.cache_store = :redis_cache_store,
+                         { url: (ENV['REDIS_URL'] || 'redis://localhost:6379/0'),
+                           ssl_params: { verify_mode: OpenSSL::SSL::VERIFY_NONE } }
   end
 end
