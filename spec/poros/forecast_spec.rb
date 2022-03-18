@@ -102,20 +102,22 @@ RSpec.describe Forecast do
     end
   end
   describe '#attributes' do
-    it 'has a current' do
-      actual = forecast.current
-      expected = {
-        datetime: '2022-03-05 10:37:35',
-        sunrise: '2022-03-05 06:26:42 -0700',
-        sunset: '2022-03-05 17:56:32 -0700',
-        temperature: 33.87,
-        feels_like: 21.96,
-        humidity: 49,
-        uvi: 2.52,
-        visibility: 10_000,
-        condtions: 'scattered clouds',
-        icon: '03d'
-      }
+    context 'when it is a valid destination' do
+      it 'has a current' do
+        actual = forecast.current
+        expected = {
+          datetime: '2022-03-05 10:37:35',
+          sunrise: '2022-03-05 06:26:42 -0700',
+          sunset: '2022-03-05 17:56:32 -0700',
+          temperature: 33.87,
+          feels_like: 21.96,
+          humidity: 49,
+          uvi: 2.52,
+          visibility: 10_000,
+          condtions: 'scattered clouds',
+          icon: '03d'
+        }
+      end
     end
     it 'has a hourly' do
       actual = forecast.hourly
