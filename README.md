@@ -19,7 +19,7 @@ $ rails s
 ``` 
 * Use below postman collection to get endpoints
 <p> 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/b8ff93e51a5d15f17c03?action=collection%2Fimport)
+[Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/b8ff93e51a5d15f17c03?action=collection%2Fimport)
 </p>
 
 ## Technologies
