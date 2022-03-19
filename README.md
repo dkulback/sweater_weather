@@ -40,13 +40,14 @@ $ rails s
 3. Setup the database: `rails db:create`
 4. Run migrations: ` rails db:migrate`
 6. Create an account with [OpenWeather API](https://home.openweathermap.org/users/sign_up) and request an API key
-7. Create an account with [Pexels](https://www.farmsense.net/api/frost-date-api/)
+7. Create an account with [Pexels](https://www.pexels.com/api/) and request an API key
+8. Create an account with [Mapquest API](https://developer.mapquest.com/documentation/open/directions-api/)
 9. Install the Figaro gem: `bundle exec figaro install`
 10. Add your API key to the `application.yml` created by Figaro:
   ```yml
-  weather_api_key: your_api_key  -- Must request api key from [OpenWeather API](https://home.openweathermap.org/users/sign_up)
-  map_api_key: your_api_key      -- Must request api key from [Mapquest API](https://developer.mapquest.com/documentation/open/directions-api/)
-  photo_api_key: your_api_key    -- Must request api key from [Pexels](https://www.farmsense.net/api/frost-date-api/)
+  weather_api_key: your_api_key 
+  map_api_key: your_api_key     
+  photo_api_key: your_api_key    
   ```
 
 ## Running the tests
