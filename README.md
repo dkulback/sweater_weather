@@ -11,12 +11,16 @@ location or where you plan on traveling to next. This application expose four in
 * http://localhost:3000
 
 ## INTERVIEWER 
+* After adding api keys to your application.yml file listed below
+
 * start server 
 ``` 
 $ rails s
 ``` 
-* Use below postman collection to get endpoints 
+* Use below postman collection to get endpoints
+<p> 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/b8ff93e51a5d15f17c03?action=collection%2Fimport)
+</p>
 
 ## Technologies
 ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white)
@@ -40,8 +44,9 @@ $ rails s
 9. Install the Figaro gem: `bundle exec figaro install`
 10. Add your API key to the `application.yml` created by Figaro:
   ```yml
-  OPENWEATHER_KEY: your_api_key
-  PEXELS_KEY: your_api_key
+  weather_api_key: your_api_key  -- Must request api key from [OpenWeather API](https://home.openweathermap.org/users/sign_up)
+  map_api_key: your_api_key      -- Must request api key from [Mapquest API](https://developer.mapquest.com/documentation/open/directions-api/)
+  photo_api_key: your_api_key    -- Must request api key from [Pexels](https://www.farmsense.net/api/frost-date-api/)
   ```
 
 ## Running the tests
