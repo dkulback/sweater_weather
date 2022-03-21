@@ -7,20 +7,6 @@ location or where you plan on traveling to next. This application expose four in
 4. Planning a road trip
 
 
-## Deployment
-* http://localhost:3000
-
-## INTERVIEWER 
-* After adding api keys to your application.yml file listed below
-
-* start server 
-``` 
-$ rails s
-``` 
-* Use below postman collection to get endpoints
-<p> 
-[Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/b8ff93e51a5d15f17c03?action=collection%2Fimport)
-</p>
 
 ## Technologies
 ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white)
