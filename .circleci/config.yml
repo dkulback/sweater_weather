@@ -24,14 +24,14 @@ jobs:
       - image: cimg/ruby:2.7.2-node
       - environment:
           POSTGRES_DB: sweather_weather_test
-          POSTGRES_USER: sweather_weather
+          POSTGRES_USER: sweather_weather_development
           POSTGRES_PASSWORD: ''
         image: cimg/postgres:14.1
     environment:
       BUNDLE_JOBS: 3
       BUNDLE_RETRY: 3
       PGHOST: 127.0.0.1
-      PGUSER: sweater_weather
+      PGUSER: sweather_weather_development
       PGPASSWORD: ''
       RAILSENV: test
     parallelism: 3
