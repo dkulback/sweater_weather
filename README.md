@@ -47,8 +47,8 @@ $ rails s
 
 ## Endpoint Information:
 
-### User Endpoints 
-- Create a new user `POST '/api/v1/users'`
+### New User Endpoint
+-  `POST '/api/v1/users'`
 <details>
   <summary> Request body json </summary>
   
@@ -78,7 +78,42 @@ $ rails s
 ```
   
 </details>
-
+### Road Trip Endpoint
+-  `POST '/api/v1/road_trip'`
+<details>
+  <summary> Request body json **API KEY REQUIRED** </summary>
+  
+```json
+{
+  "origin": "Denver,CO",
+  "destination": "Pueblo,CO",
+  "api_key": "1P5Wp3Tq52jWpAAbAWnzcq5h"
+}
+```
+  
+</details>
+<details>
+  <summary> Successful response will look like:</summary>
+  
+```json
+{
+    "data": {
+        "id": null,
+        "type": "roadtrip",
+        "attributes": {
+            "start_city": "Denver,CO",
+            "end_city": "Pueblo,CO",
+            "travel_time": "01:45:23",
+            "weather_at_eta": {
+                "temperature": 57.6,
+                "conditions": "broken clouds"
+            }
+        }
+    }
+}
+```
+  
+</details>
 
 ## Running the tests
 Run `bundle exec rspec` to run the test suite
