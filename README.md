@@ -78,6 +78,7 @@ $ rails s
 ```
   
 </details>
+
 ### Road Trip Endpoint
 -  `POST '/api/v1/road_trip'`
 <details>
