@@ -48,8 +48,7 @@ $ rails s
 ## Endpoint Information:
 
 ### User Endpoints 
-- `POST '/api/v1/users'`
-* JSON required in request body
+- Create a new user `POST '/api/v1/users'`
 <details>
   <summary> Request body json </summary>
   
@@ -79,24 +78,7 @@ $ rails s
 ```
   
 </details>
-- `POST '/api/v1/users'`
-<details>
-  <summary>A successful response will look like:</summary>
-  
-```json
-{
-    "data": {
-        "type": "users",
-        "id": 3,
-        "attributes": {
-            "email": "example_user@mail.com",
-            "api_key": "1P5Wp3Tq52jWpAAbAWnzcq5h"
-        }
-    }
-}
-```
-  
-</details>
+
 
 ## Running the tests
 Run `bundle exec rspec` to run the test suite
