@@ -2,7 +2,7 @@
 require 'database_cleaner'
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
-require_relative '../config/environment'
+require_relative '../config/environment/'
 require 'simplecov'
 SimpleCov.start
 # Prevent database truncation if the environment is production
