@@ -34,6 +34,7 @@ jobs:
       PGUSER: sweather_weather_development
       PGPASSWORD: ''
       RAILSENV: test
+      TZ: "America/Denver"
     parallelism: 3
     steps:
       - checkout
