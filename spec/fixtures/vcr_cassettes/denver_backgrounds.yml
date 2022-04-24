@@ -21,54 +21,49 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 06 Mar 2022 16:29:47 GMT
+      - Fri, 11 Mar 2022 23:18:28 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Content-Length:
-      - '484'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
       Cf-Ray:
-      - 6e7c78dd49478eae-DEN
+      - 6ea8026b4a80c7d1-DEN
+      Access-Control-Allow-Origin:
+      - "*"
       Cache-Control:
       - max-age=0, private, must-revalidate
-      Set-Cookie:
-      - __cf_bm=TyuWVHRQe0lFbd4tA3Jt0X9UKLb1.NQUF2YaqHBx6y0-1646584187-0-AbUuhtAGPy/CsntkqHD4fXF0/Deva36QHQQd2vMNAPvM9lfRrOqlbCdyz/e39d/DbuKaexSiM5ECtxXHvde5sOw=;
-        path=/; expires=Sun, 06-Mar-22 16:59:47 GMT; domain=.pexels.com; HttpOnly;
-        Secure; SameSite=None
-      - __cf_bm=UM7MTnVAssvvL7ixsg4kZqx7VGcV9qnz38o.kvIaFyU-1646584187-0-Adk47lzWpRIhXxbBKIjg7c5ebkdT8Q1x5hMPnwqKC/S8BaUlOVROQAKThnpfCel3x/bNfkzJzU1ggQrp99n35Ew=;
-        path=/; expires=Sun, 06-Mar-22 16:59:47 GMT; domain=.pexels.com; HttpOnly;
-        Secure; SameSite=None
-      - _mkra_stck=mysql%3A1646584191.9982944; path=/; max-age=10; expires=Sun, 06
-        Mar 2022 16:29:56 GMT; HttpOnly
-      Vary:
-      - Origin, Accept-Encoding
+      Etag:
+      - W/"27d9ef841a8aed46a4e54b77813f7de6"
       Cf-Cache-Status:
       - DYNAMIC
-      Alt-Svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       X-Frame-Options:
       - SAMEORIGIN
-      X-Ratelimit-Limit:
-      - '20000'
       X-Ratelimit-Remaining:
-      - '19986'
-      X-Ratelimit-Reset:
-      - '1649024797'
+      - '20000'
       X-Request-Id:
-      - ea9e8f7e-4fe5-4150-8fde-1395dd8ba487
+      - 61b83834-2afe-4a8c-b9e3-3d31663f6b4e
       X-Runtime:
-      - '0.373038'
+      - '0.056432'
       X-Server:
-      - anteater
+      - alpaca
+      Set-Cookie:
+      - __cf_bm=OlVLjrx855LXYlwAIfxUTQV94x5voSbGb4tOfUUZsE4-1647040708-0-Abwr/Ye4Bpo7fpyJjnEzFK+IWdFY5NVZ8ROJjlnZv9mrVK19Nyq3k/dOPz+fYHoMiSASl4iAD9k7IPAFgCXMqYA=;
+        path=/; expires=Fri, 11-Mar-22 23:48:28 GMT; domain=.pexels.com; HttpOnly;
+        Secure; SameSite=None
+      Vary:
+      - Accept-Encoding
       Server:
       - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
-      string: '{"page":1,"per_page":1,"photos":[{"id":11032963,"width":4185,"height":2795,"url":"https://www.pexels.com/photo/a-city-skyline-during-night-time-11032963/","photographer":"Josh
-        Hild","photographer_url":"https://www.pexels.com/@josh-hild-1270765","photographer_id":1270765,"avg_color":"#293F4C","src":{"original":"https://images.pexels.com/photos/11032963/pexels-photo-11032963.jpeg","large2x":"https://images.pexels.com/photos/11032963/pexels-photo-11032963.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/11032963/pexels-photo-11032963.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/11032963/pexels-photo-11032963.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/11032963/pexels-photo-11032963.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/11032963/pexels-photo-11032963.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/11032963/pexels-photo-11032963.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/11032963/pexels-photo-11032963.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"A
-        City Skyline during Night Time"}],"total_results":8000,"next_page":"https://api.pexels.com/v1/search/?page=2\u0026per_page=1\u0026query=denver%2Cco%2Cskyline"}'
-  recorded_at: Sun, 06 Mar 2022 16:29:47 GMT
+      string: '{"page":1,"per_page":1,"photos":[{"id":11360695,"width":2581,"height":3872,"url":"https://www.pexels.com/photo/man-lying-in-sand-11360695/","photographer":"Kristina
+        Holman","photographer_url":"https://www.pexels.com/@kristina-holman-189555703","photographer_id":189555703,"avg_color":"#D8D9DB","src":{"original":"https://images.pexels.com/photos/11360695/pexels-photo-11360695.jpeg","large2x":"https://images.pexels.com/photos/11360695/pexels-photo-11360695.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/11360695/pexels-photo-11360695.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/11360695/pexels-photo-11360695.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/11360695/pexels-photo-11360695.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/11360695/pexels-photo-11360695.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/11360695/pexels-photo-11360695.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/11360695/pexels-photo-11360695.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"alt":"Man
+        Lying in Sand"}],"total_results":8000,"next_page":"https://api.pexels.com/v1/search/?page=2\u0026per_page=1\u0026query=denver%2Cco%2Cskyline"}'
+  recorded_at: Fri, 11 Mar 2022 23:18:28 GMT
 recorded_with: VCR 6.0.0

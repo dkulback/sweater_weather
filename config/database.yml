@@ -76,10 +76,10 @@ test:
 # You can use this database configuration with:
 #
 #   production:
-#     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
   <<: *default
   database: sweater_weather_production
   username: sweater_weather
   password: <%= ENV['SWEATER_WEATHER_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>

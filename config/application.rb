@@ -34,5 +34,9 @@ module SweaterWeather
     config.session_store :cookie_store, key: '_interslice_session'
     config.middleware.use ActionDispatch::Cookies
     config.middleware.use config.session_store, config.session_options
+    config.time_zone = 'Mountain Time (US & Canada)'
+
+    config.action_mailer.perform_caching = true
+    config.cache_store = :redis_cache_store, { url: (ENV['REDIS_URL'] || 'redis://localhost:6379/0') }
   end
 end

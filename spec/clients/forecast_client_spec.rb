@@ -27,7 +27,7 @@ RSpec.describe ForecastClient do
         expect(current[:sunset]).to be_a(Integer)
         expect(current[:temp]).to be_a(Float)
         expect(current[:feels_like]).to be_a(Float)
-        expect(current[:uvi]).to be_a(Integer)
+        expect(current[:uvi]).to be_a(Integer).or be_a(Float)
         expect(current[:weather][0][:description]).to be_a(String)
         expect(current[:weather][0][:icon]).to be_a(String)
 
