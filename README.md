@@ -51,7 +51,7 @@ $ rails s
 - `POST '/api/v1/users'`
 * Request Body JSON
 <details> 
-  ```json
+ ```json
 {
     "email": "example_user@mail.com",
     "password": "12345",
