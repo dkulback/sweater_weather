@@ -11,6 +11,8 @@ Sweater Weather is part of an SOA web-application. Its purpose is for determinin
 ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white)
 ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 
+## Database Schema: 
+![Screen Shot 2022-04-24 at 3 51 52 PM](https://user-images.githubusercontent.com/83717116/164998199-d6667249-adc0-48c3-935e-3c09f23ca6e7.png)
 
 ## APIs Used
   - [OpenWeather API](https://openweathermap.org/api)
