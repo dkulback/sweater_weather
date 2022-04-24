@@ -45,6 +45,45 @@ $ rails s
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/b8ff93e51a5d15f17c03?action=collection%2Fimport)
 
+## Endpoint Information:
+
+### User Endpoints 
+- `POST '/api/v1/users'`
+<details>
+  <summary>A successful response will look like:</summary>
+  
+```json
+{
+    "data": {
+        "type": "users",
+        "id": 3,
+        "attributes": {
+            "email": "example_user@mail.com",
+            "api_key": "1P5Wp3Tq52jWpAAbAWnzcq5h"
+        }
+    }
+}
+```
+  
+</details>
+- `POST '/api/v1/users'`
+<details>
+  <summary>A successful response will look like:</summary>
+  
+```json
+{
+    "data": {
+        "type": "users",
+        "id": 3,
+        "attributes": {
+            "email": "example_user@mail.com",
+            "api_key": "1P5Wp3Tq52jWpAAbAWnzcq5h"
+        }
+    }
+}
+```
+  
+</details>
 
 ## Running the tests
 Run `bundle exec rspec` to run the test suite
