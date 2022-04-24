@@ -49,8 +49,18 @@ $ rails s
 
 ### User Endpoints 
 - `POST '/api/v1/users'`
+* Request Body JSON
+<details> 
+  ```json
+{
+    "email": "example_user@mail.com",
+    "password": "12345",
+    "password_confirmation": "12345"
+}
+```
+</details>
 <details>
-  <summary>A successful response will look like:</summary>
+  <summary> Successful response will look like:</summary>
   
 ```json
 {
