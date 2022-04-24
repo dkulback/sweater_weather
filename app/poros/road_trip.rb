@@ -51,13 +51,12 @@ class RoadTrip
   end
 
   def weather_eta
-    current_forecast = forecast
-    if current_forecast
+    if format_time_hour
       if format_time_hour >= 8 && to_days <= 5
-        weather = current_forecast.daily[to_days - 1]
-        { temperature: weather[:max_temp], conditions: weather[:condtitions] }
+        weather = forecast.daily[to_days - 1]
+        { temperature: weather[:max_temp], conditions: weather[:conditions] }
       elsif format_time_hour <= 8
-        weather = current_forecast.hourly[format_time_hour - 1]
+        weather = forecast.hourly[format_time_hour - 1]
         { temperature: weather[:temperature], conditions: weather[:conditions] }
       else
         {}

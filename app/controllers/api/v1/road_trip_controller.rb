@@ -3,6 +3,7 @@ class Api::V1::RoadTripController < ApplicationController
   def create
     if @user
       trip = RoadTripServicer.road_trip(params[:origin], params[:destination])
+
       render json: RoadTripSerializer.road_trip(trip), status: :ok
     else
       render json: { message: { error: 'Invalid or missing api key!' } }, status: :unauthorized

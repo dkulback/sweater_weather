@@ -3,11 +3,5 @@ class User < ApplicationRecord
   validates_uniqueness_of :email, case_sensitive: false
 
   has_secure_password
-  before_create :set_api_key
-
-  private
-
-  def set_api_key
-    self.api_key = ApiKey.generator
-  end
+  has_secure_token :api_key
 end

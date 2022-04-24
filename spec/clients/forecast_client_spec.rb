@@ -27,7 +27,7 @@ RSpec.describe ForecastClient do
         expect(current[:sunset]).to be_a(Integer)
         expect(current[:temp]).to be_a(Float)
         expect(current[:feels_like]).to be_a(Float)
-        expect(current[:uvi]).to be_a(Integer)
+        expect(current[:uvi]).to be_a(Integer).or be_a(Float)
         expect(current[:weather][0][:description]).to be_a(String)
         expect(current[:weather][0][:icon]).to be_a(String)
 
@@ -63,6 +63,14 @@ RSpec.describe ForecastClient do
         expect(hourly[:temp]).to be_a(Float)
         expect(hourly[:weather][0][:description]).to be_a(String)
         expect(hourly[:weather][0][:icon]).to be_a(String)
+      end
+    end
+  end
+  describe '::get_url' do
+    it 'returns a json response of weather data' do
+      VCR.use_cassette('denver_forecast') do
+        forecast = ForecastClient.get_url('/data/2.5/onecall', '39.738453', '-104.984853')
+        expect(forecast).to be_a(Faraday::Response)
       end
     end
   end
