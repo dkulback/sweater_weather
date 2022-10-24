@@ -66,4 +66,12 @@ RSpec.describe ForecastClient do
       end
     end
   end
+  describe '::get_url' do
+    it 'returns a json response of weather data' do
+      VCR.use_cassette('denver_forecast') do
+        forecast = ForecastClient.get_url('/data/2.5/onecall', '39.738453', '-104.984853')
+        expect(forecast).to be_a(Faraday::Response)
+      end
+    end
+  end
 end
