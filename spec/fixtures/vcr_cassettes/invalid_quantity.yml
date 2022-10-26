@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://www.mapquestapi.com/geocoding/v1/address?key=fake_key&location=denver,co
+    uri: http://www.mapquestapi.com/geocoding/v1/address?key=<fake_key>&location=denver,co
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 26 Oct 2022 22:07:43 GMT
+      - Wed, 26 Oct 2022 23:36:27 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -27,7 +27,7 @@ http_interactions:
       X-Powered-By:
       - Express
       X-Request-Id:
-      - 9daa05d0-557a-11ed-ad52-4563f132e361
+      - '028b1a50-5587-11ed-a7f9-71ad9ae0c9b7'
       Access-Control-Allow-Origin:
       - "*"
       Etag:
@@ -43,7 +43,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMiBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIyIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sIm9wdGlvbnMiOnsibWF4UmVzdWx0cyI6LTEsImlnbm9yZUxhdExuZ0lucHV0IjpmYWxzZX0sInJlc3VsdHMiOlt7InByb3ZpZGVkTG9jYXRpb24iOnsibG9jYXRpb24iOiJkZW52ZXIsY28ifSwibG9jYXRpb25zIjpbeyJzdHJlZXQiOiIiLCJhZG1pbkFyZWE2IjoiIiwiYWRtaW5BcmVhNlR5cGUiOiJOZWlnaGJvcmhvb2QiLCJhZG1pbkFyZWE1IjoiRGVudmVyIiwiYWRtaW5BcmVhNVR5cGUiOiJDaXR5IiwiYWRtaW5BcmVhNCI6IkRlbnZlciIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwiYWRtaW5BcmVhMyI6IkNPIiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImFkbWluQXJlYTEiOiJVUyIsImFkbWluQXJlYTFUeXBlIjoiQ291bnRyeSIsInBvc3RhbENvZGUiOiIiLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJBNVhBWCIsImdlb2NvZGVRdWFsaXR5IjoiQ0lUWSIsImRyYWdQb2ludCI6ZmFsc2UsInNpZGVPZlN0cmVldCI6Ik4iLCJsaW5rSWQiOiIwIiwidW5rbm93bklucHV0IjoiIiwidHlwZSI6InMiLCJsYXRMbmciOnsibGF0IjozOS43NDAwMSwibG5nIjotMTA0Ljk5MjAyfSwiZGlzcGxheUxhdExuZyI6eyJsYXQiOjM5Ljc0MDAxLCJsbmciOi0xMDQuOTkyMDJ9LCJtYXBVcmwiOiIifV19XX0=
-  recorded_at: Wed, 26 Oct 2022 22:07:43 GMT
+  recorded_at: Wed, 26 Oct 2022 23:36:26 GMT
 - request:
     method: get
     uri: http://openlibrary.org/search.json?fields=title,publisher,isbn&limit=5&q=denver,co
@@ -65,7 +65,7 @@ http_interactions:
       Server:
       - nginx/1.18.0 (Ubuntu)
       Date:
-      - Wed, 26 Oct 2022 22:07:46 GMT
+      - Wed, 26 Oct 2022 23:36:27 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -79,7 +79,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '86400'
       X-Ol-Stats:
-      - '"SR 1 0.009 TT 0 0.009"'
+      - '"SR 1 0.008 TT 0 0.008"'
       Referrer-Policy:
       - no-referrer-when-downgrade
     body:
@@ -145,7 +145,7 @@ http_interactions:
             "q": "denver,co",
             "offset": null
         }
-  recorded_at: Wed, 26 Oct 2022 22:07:46 GMT
+  recorded_at: Wed, 26 Oct 2022 23:36:27 GMT
 - request:
     method: get
     uri: http://openlibrary.org/search.json?fields=title,publisher,isbn&limit=5&q=denver,co
@@ -167,7 +167,7 @@ http_interactions:
       Server:
       - nginx/1.18.0 (Ubuntu)
       Date:
-      - Wed, 26 Oct 2022 22:07:48 GMT
+      - Wed, 26 Oct 2022 23:36:27 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -181,7 +181,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '86400'
       X-Ol-Stats:
-      - '"SR 1 0.007 TT 0 0.007"'
+      - '"SR 1 0.008 TT 0 0.008"'
       Referrer-Policy:
       - no-referrer-when-downgrade
     body:
@@ -247,5 +247,5 @@ http_interactions:
             "q": "denver,co",
             "offset": null
         }
-  recorded_at: Wed, 26 Oct 2022 22:07:48 GMT
+  recorded_at: Wed, 26 Oct 2022 23:36:27 GMT
 recorded_with: VCR 6.1.0
