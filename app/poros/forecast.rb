@@ -16,7 +16,7 @@ class Forecast
       conditions: data[:current][:weather][0][:description],
       icon: data[:current][:weather][0][:icon]
     }
-    @hourly = data[:hourly][0..7].map do |hour|
+    @hourly = data[:hourly][0..47].map do |hour|
       {
         time: Time.at(hour[:dt]).to_datetime.strftime('%H-%M-%S'),
         temperature: hour[:temp],
