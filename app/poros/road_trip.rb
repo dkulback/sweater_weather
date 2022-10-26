@@ -34,7 +34,11 @@ class RoadTrip
   end
 
   def format_time_hour
-    (real_time / 3600.to_f).round if real_time
+    if real_time
+      (real_time / 3600.to_f).round
+    else
+      0
+    end
   end
 
   def to_days
@@ -51,17 +55,32 @@ class RoadTrip
   end
 
   def weather_eta
-    current_forecast = forecast
-    if current_forecast
-      if format_time_hour >= 8 && to_days <= 5
-        weather = current_forecast.daily[to_days - 1]
-        { temperature: weather[:max_temp], conditions: weather[:condtitions] }
-      elsif format_time_hour <= 8
-        weather = current_forecast.hourly[format_time_hour - 1]
-        { temperature: weather[:temperature], conditions: weather[:conditions] }
-      else
-        {}
-      end
+    if travel_time == 'Impossible'
+      {}
+    elsif format_time_hour > 48
+      daily_eta
+    else
+      hourly_eta
+    end
+  end
+
+  def daily_eta
+    if forecast
+      weather = forecast.daily[to_days - 1]
+      {
+        temperature: weather[:max_temp],
+        conditions: weather[:conditions]
+      }
+    end
+  end
+
+  def hourly_eta
+    if forecast
+      weather = forecast.hourly[format_time_hour - 1]
+      {
+        temperature: weather[:temperature],
+        conditions: weather[:conditions]
+      }
     end
   end
 end
