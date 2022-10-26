@@ -25,7 +25,7 @@ RSpec.describe ForecastClient do
         expect(current[:dt]).to be_a(Integer)
         expect(current[:sunrise]).to be_a(Integer)
         expect(current[:sunset]).to be_a(Integer)
-        expect(current[:temp]).to be_a(Float)
+        expect(current[:temp]).to be_a(Float).or be_a(Integer)
         expect(current[:feels_like]).to be_a(Float)
         expect(current[:uvi]).to be_a(Integer).or be_a(Float)
         expect(current[:weather][0][:description]).to be_a(String)
@@ -45,7 +45,7 @@ RSpec.describe ForecastClient do
         expect(daily[:dt]).to be_a(Integer)
         expect(daily[:sunrise]).to be_a(Integer)
         expect(daily[:sunset]).to be_a(Integer)
-        expect(daily[:temp][:max]).to be_a(Float)
+        expect(daily[:temp][:max]).to be_a(Float).or be_a(Integer)
         expect(daily[:uvi]).to be_a(Float)
         expect(daily[:weather][0][:description]).to be_a(String)
         expect(daily[:weather][0][:icon]).to be_a(String)
@@ -60,7 +60,7 @@ RSpec.describe ForecastClient do
 
         hourly = forecast[:hourly][0]
         expect(hourly[:dt]).to be_a(Integer)
-        expect(hourly[:temp]).to be_a(Float)
+        expect(hourly[:temp]).to be_a(Float).or be_a(Integer)
         expect(hourly[:weather][0][:description]).to be_a(String)
         expect(hourly[:weather][0][:icon]).to be_a(String)
       end
