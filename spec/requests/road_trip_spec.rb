@@ -64,7 +64,7 @@ RSpec.describe 'API roadtrips' do
           expect(road_trip[:data][:attributes]).to have_key(:travel_time)
           expect(road_trip[:data][:attributes][:travel_time]).to eq('Impossible')
           expect(road_trip[:data][:attributes]).to have_key(:weather_at_eta)
-          expect(road_trip[:data][:attributes][:weather_at_eta]).to eq(nil)
+          expect(road_trip[:data][:attributes][:weather_at_eta]).to eq({})
           expect(response).to have_http_status(200)
         end
       end
