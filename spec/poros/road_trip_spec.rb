@@ -13,6 +13,9 @@ RSpec.describe RoadTrip do
                      adminArea3: 'CO'
                    ] })
   end
+  let(:invalid_roadtrip) do
+    RoadTrip.new({ routeError: { errorCode: 2 } })
+  end
   describe 'initialize' do
     it 'exists' do
       actual = roadtrip
@@ -60,15 +63,26 @@ RSpec.describe RoadTrip do
     end
   end
   describe 'weather_eta' do
-    it 'returns the temperature and conditions at destination from eta' do
-      VCR.use_cassette('pueblo_co') do
-        actual = roadtrip.weather_eta
-        expected = Hash
-        expect(actual).to be_a(expected)
-        expect(actual).to have_key(:temperature)
-        expect(actual).to have_key(:conditions)
-        expect(actual[:conditions]).to be_a(String)
-        expect(actual[:temperature]).to be_a(Float)
+    context 'when trip has valid destinations' do
+      it 'returns the weather at eta when trip is valid' do
+        VCR.use_cassette('pueblo_co') do
+          actual = roadtrip.weather_eta
+          expected = Hash
+          expect(actual).to be_a(expected)
+          expect(actual).to have_key(:temperature)
+          expect(actual).to have_key(:conditions)
+          expect(actual[:conditions]).to be_a(String)
+          expect(actual[:temperature]).to be_a(Float)
+        end
+      end
+    end
+    context 'when trip has invalid destinations' do
+      it 'returns empty hash' do
+        VCR.use_cassette('hong_kong') do
+          actual = invalid_roadtrip.weather_eta
+          expected = {}
+          expect(actual).to eq(expected)
+        end
       end
     end
   end
