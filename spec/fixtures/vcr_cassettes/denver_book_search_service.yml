@@ -21,211 +21,7 @@ http_interactions:
       Server:
       - nginx/1.18.0 (Ubuntu)
       Date:
-      - Thu, 27 Oct 2022 00:57:17 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Method:
-      - GET, OPTIONS
-      Access-Control-Max-Age:
-      - '86400'
-      X-Ol-Stats:
-      - '"SR 1 0.012 TT 0 0.013"'
-      Referrer-Policy:
-      - no-referrer-when-downgrade
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-            "numFound": 681,
-            "start": 0,
-            "numFoundExact": true,
-            "docs": [
-                {
-                    "title": "Denver west, CO and Bailey, CO: Denver, CO",
-                    "isbn": [
-                        "9780607620054",
-                        "0607620056"
-                    ],
-                    "publisher": [
-                        "USGS Branch of Distribution"
-                    ]
-                },
-                {
-                    "title": "Denver, Co",
-                    "isbn": [
-                        "0762507845",
-                        "9780762507849"
-                    ],
-                    "publisher": [
-                        "Universal Map Enterprises"
-                    ]
-                },
-                {
-                    "title": "Denver East, CO and Castle Rock, CO: Denver, CO",
-                    "isbn": [
-                        "9780607620047",
-                        "0607620048"
-                    ],
-                    "publisher": [
-                        "USGS Branch of Distribution"
-                    ]
-                },
-                {
-                    "title": "Denver Co Deluxe Flip Map",
-                    "isbn": [
-                        "0762557362",
-                        "9780762557363"
-                    ],
-                    "publisher": [
-                        "Universal Map Enterprises"
-                    ]
-                },
-                {
-                    "title": "University of Denver Co 2007",
-                    "isbn": [
-                        "9781427401687",
-                        "1427401683"
-                    ],
-                    "publisher": [
-                        "College Prowler"
-                    ]
-                }
-            ],
-            "num_found": 681,
-            "q": "denver,co",
-            "offset": null
-        }
-  recorded_at: Thu, 27 Oct 2022 00:57:16 GMT
-- request:
-    method: get
-    uri: http://openlibrary.org/search.json?fields=title,publisher,isbn&limit=5&q=denver,co
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.6.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx/1.18.0 (Ubuntu)
-      Date:
-      - Thu, 27 Oct 2022 00:57:17 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Method:
-      - GET, OPTIONS
-      Access-Control-Max-Age:
-      - '86400'
-      X-Ol-Stats:
-      - '"SR 1 0.008 TT 0 0.008"'
-      Referrer-Policy:
-      - no-referrer-when-downgrade
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-            "numFound": 681,
-            "start": 0,
-            "numFoundExact": true,
-            "docs": [
-                {
-                    "title": "Denver west, CO and Bailey, CO: Denver, CO",
-                    "isbn": [
-                        "9780607620054",
-                        "0607620056"
-                    ],
-                    "publisher": [
-                        "USGS Branch of Distribution"
-                    ]
-                },
-                {
-                    "title": "Denver, Co",
-                    "isbn": [
-                        "0762507845",
-                        "9780762507849"
-                    ],
-                    "publisher": [
-                        "Universal Map Enterprises"
-                    ]
-                },
-                {
-                    "title": "Denver East, CO and Castle Rock, CO: Denver, CO",
-                    "isbn": [
-                        "9780607620047",
-                        "0607620048"
-                    ],
-                    "publisher": [
-                        "USGS Branch of Distribution"
-                    ]
-                },
-                {
-                    "title": "Denver Co Deluxe Flip Map",
-                    "isbn": [
-                        "0762557362",
-                        "9780762557363"
-                    ],
-                    "publisher": [
-                        "Universal Map Enterprises"
-                    ]
-                },
-                {
-                    "title": "University of Denver Co 2007",
-                    "isbn": [
-                        "9781427401687",
-                        "1427401683"
-                    ],
-                    "publisher": [
-                        "College Prowler"
-                    ]
-                }
-            ],
-            "num_found": 681,
-            "q": "denver,co",
-            "offset": null
-        }
-  recorded_at: Thu, 27 Oct 2022 00:57:17 GMT
-- request:
-    method: get
-    uri: http://openlibrary.org/search.json?fields=title,publisher,isbn&limit=5&q=denver,co
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.6.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx/1.18.0 (Ubuntu)
-      Date:
-      - Thu, 27 Oct 2022 00:57:17 GMT
+      - Thu, 27 Oct 2022 01:02:42 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -305,7 +101,7 @@ http_interactions:
             "q": "denver,co",
             "offset": null
         }
-  recorded_at: Thu, 27 Oct 2022 00:57:17 GMT
+  recorded_at: Thu, 27 Oct 2022 01:02:42 GMT
 - request:
     method: get
     uri: http://openlibrary.org/search.json?fields=title,publisher,isbn&limit=5&q=denver,co
@@ -327,7 +123,7 @@ http_interactions:
       Server:
       - nginx/1.18.0 (Ubuntu)
       Date:
-      - Thu, 27 Oct 2022 00:57:17 GMT
+      - Thu, 27 Oct 2022 01:02:42 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -407,5 +203,209 @@ http_interactions:
             "q": "denver,co",
             "offset": null
         }
-  recorded_at: Thu, 27 Oct 2022 00:57:17 GMT
+  recorded_at: Thu, 27 Oct 2022 01:02:42 GMT
+- request:
+    method: get
+    uri: http://openlibrary.org/search.json?fields=title,publisher,isbn&limit=5&q=denver,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Thu, 27 Oct 2022 01:02:42 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Method:
+      - GET, OPTIONS
+      Access-Control-Max-Age:
+      - '86400'
+      X-Ol-Stats:
+      - '"SR 1 0.008 TT 0 0.009"'
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "numFound": 681,
+            "start": 0,
+            "numFoundExact": true,
+            "docs": [
+                {
+                    "title": "Denver west, CO and Bailey, CO: Denver, CO",
+                    "isbn": [
+                        "9780607620054",
+                        "0607620056"
+                    ],
+                    "publisher": [
+                        "USGS Branch of Distribution"
+                    ]
+                },
+                {
+                    "title": "Denver, Co",
+                    "isbn": [
+                        "0762507845",
+                        "9780762507849"
+                    ],
+                    "publisher": [
+                        "Universal Map Enterprises"
+                    ]
+                },
+                {
+                    "title": "Denver East, CO and Castle Rock, CO: Denver, CO",
+                    "isbn": [
+                        "9780607620047",
+                        "0607620048"
+                    ],
+                    "publisher": [
+                        "USGS Branch of Distribution"
+                    ]
+                },
+                {
+                    "title": "Denver Co Deluxe Flip Map",
+                    "isbn": [
+                        "0762557362",
+                        "9780762557363"
+                    ],
+                    "publisher": [
+                        "Universal Map Enterprises"
+                    ]
+                },
+                {
+                    "title": "University of Denver Co 2007",
+                    "isbn": [
+                        "9781427401687",
+                        "1427401683"
+                    ],
+                    "publisher": [
+                        "College Prowler"
+                    ]
+                }
+            ],
+            "num_found": 681,
+            "q": "denver,co",
+            "offset": null
+        }
+  recorded_at: Thu, 27 Oct 2022 01:02:42 GMT
+- request:
+    method: get
+    uri: http://openlibrary.org/search.json?fields=title,publisher,isbn&limit=5&q=denver,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Thu, 27 Oct 2022 01:02:43 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Method:
+      - GET, OPTIONS
+      Access-Control-Max-Age:
+      - '86400'
+      X-Ol-Stats:
+      - '"SR 1 0.008 TT 0 0.008"'
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "numFound": 681,
+            "start": 0,
+            "numFoundExact": true,
+            "docs": [
+                {
+                    "title": "Denver west, CO and Bailey, CO: Denver, CO",
+                    "isbn": [
+                        "9780607620054",
+                        "0607620056"
+                    ],
+                    "publisher": [
+                        "USGS Branch of Distribution"
+                    ]
+                },
+                {
+                    "title": "Denver, Co",
+                    "isbn": [
+                        "0762507845",
+                        "9780762507849"
+                    ],
+                    "publisher": [
+                        "Universal Map Enterprises"
+                    ]
+                },
+                {
+                    "title": "Denver East, CO and Castle Rock, CO: Denver, CO",
+                    "isbn": [
+                        "9780607620047",
+                        "0607620048"
+                    ],
+                    "publisher": [
+                        "USGS Branch of Distribution"
+                    ]
+                },
+                {
+                    "title": "Denver Co Deluxe Flip Map",
+                    "isbn": [
+                        "0762557362",
+                        "9780762557363"
+                    ],
+                    "publisher": [
+                        "Universal Map Enterprises"
+                    ]
+                },
+                {
+                    "title": "University of Denver Co 2007",
+                    "isbn": [
+                        "9781427401687",
+                        "1427401683"
+                    ],
+                    "publisher": [
+                        "College Prowler"
+                    ]
+                }
+            ],
+            "num_found": 681,
+            "q": "denver,co",
+            "offset": null
+        }
+  recorded_at: Thu, 27 Oct 2022 01:02:42 GMT
 recorded_with: VCR 6.1.0
