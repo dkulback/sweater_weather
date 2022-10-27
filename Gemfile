@@ -27,13 +27,14 @@ gem 'sidekiq'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'faraday'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-# gem 'rack-cors'
+gem 'twilio-ruby'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'figaro'
   gem 'pry'
+  gem 'rspec_junit_formatter'
 end
 group :test do
   gem 'database_cleaner'
@@ -41,6 +42,7 @@ group :test do
   gem 'faker'
   gem 'jsonapi-serializer'
   gem 'rspec-rails'
+  gem 'rubocop'
   gem 'shoulda-matchers', '~> 3.1'
   gem 'simplecov'
   gem 'vcr'

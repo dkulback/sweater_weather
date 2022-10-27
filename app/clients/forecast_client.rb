@@ -8,10 +8,18 @@ class ForecastClient
       faraday.params[:exclude] = 'minutely'
     end
     response = conn.get(url)
+<<<<<<< HEAD
     json = JSON.parse(response.body, symbolize_names: true)
   end
 
   def self.get_forecast(lat, lng)
     get_url('/data/2.5/onecall', lat, lng)
+=======
+  end
+
+  def self.get_forecast(lat, lng)
+    response = get_url('/data/2.5/onecall', lat, lng)
+    JSON.parse(response.body, symbolize_names: true)
+>>>>>>> 7b76e35f2193825ceefd4dc789efc50c7e595494
   end
 end
