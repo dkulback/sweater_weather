@@ -65,7 +65,7 @@ RSpec.describe RoadTrip do
   describe 'weather_eta' do
     context 'when trip has valid destinations' do
       it 'returns the weather at eta when trip is valid' do
-        VCR.use_cassette('pueblo_co') do
+        VCR.use_cassette('pueblo_co_2') do
           actual = roadtrip.weather_eta
           expected = Hash
           expect(actual).to be_a(expected)
