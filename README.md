@@ -1,6 +1,5 @@
 # Sweater Weather
-Sweater Weather is part of a SOA web-application. Its purpose is for determining a forecast based on your
-location or where you plan on traveling to next. This application expose four integral endpoints for the front end to consume.
+Sweater Weather is part of an SOA web-application. Its purpose is for determining a forecast based on your location or where you plan on traveling next. This application exposes four integral endpoints for the front end to consume.
 1. Forecast for a location
 2. Background image at that location
 3. User creation
