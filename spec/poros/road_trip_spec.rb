@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe RoadTrip do
   let(:roadtrip) do
-    RoadTrip.new({ formattedTime: '01:45:23', realTime: 6892,
+    RoadTrip.new({ formattedTime: '01:45:23', time: 6892,
                    routeError: { errorCode: -400 },
                    locations: [
                      {
