@@ -2,9 +2,9 @@ require 'rails_helper'
 
 RSpec.describe 'API roadtrips' do
   let(:headers) { { "Content-Type": 'application/json', "Accept": 'application/json' } }
-  let(:valid_body) { { origin: 'denver,co', destination: 'Pueblo,co', api_key: 'lx7HrdFFTzSDKXv64chdGwtt' } }
+  let(:valid_body) { { origin: 'denver,co', destination: 'pueblo,co', api_key: 'lx7HrdFFTzSDKXv64chdGwtt' } }
   let(:invalid_destination) { { origin: 'denver,co', destination: 'Germany', api_key: 'lx7HrdFFTzSDKXv64chdGwtt' } }
-  let(:unauthorized) { { origin: 'denver,co', destination: 'Pueblo,co', api_key: '12345' } }
+  let(:unauthorized) { { origin: 'denver,co', destination: 'pueblo,co', api_key: '12345' } }
   describe 'POST api/v1/road_trip' do
     context 'when params are valid' do
       it 'returns a user json and status 200' do
