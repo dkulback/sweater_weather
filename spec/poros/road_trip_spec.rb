@@ -38,7 +38,7 @@ RSpec.describe RoadTrip do
       expect(actual).to eq(expected)
     end
     it 'has a end' do
-      actual = roadtrip.end
+      actual = roadtrip.end_point
       expected = 'Pueblo,CO'
       expect(actual).to eq(expected)
     end
