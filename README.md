@@ -1,6 +1,5 @@
 # Sweater Weather
-Sweater Weather is part of a SOA web-application. Its purpose is for determining a forecast based on your
-location or where you plan on traveling to next. This application expose four integral endpoints for the front end to consume.
+Sweater Weather is part of an SOA web-application. Its purpose is for determining a forecast based on your location or where you plan on traveling next. This application exposes four integral endpoints for the front end to consume.
 1. Forecast for a location
 2. Background image at that location
 3. User creation
@@ -10,18 +9,9 @@ location or where you plan on traveling to next. This application expose four in
 ## Deployment
 * http://localhost:3000
 
-## INTERVIEWER
-* start server
-```
-$ rails s
-```
-* Use below postman collection to get endpoints
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/b8ff93e51a5d15f17c03?action=collection%2Fimport)
-
 ## Technologies
 ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white)
 ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
-
 
 ## APIs Used
   - [OpenWeather API](https://openweathermap.org/api)
@@ -45,17 +35,87 @@ $ rails s
   map_api_key: your_api_key
   photo_api_key: your_api_key
   ```
-## INTERVIEWER 
+## INTERVIEWER
 * After adding api keys to your application.yml file listed below
 
-* start server 
-``` 
+* start server
+```
 $ rails s
-``` 
+```
 * Use below postman collection to get endpoints
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/b8ff93e51a5d15f17c03?action=collection%2Fimport)
 
+## Endpoint Information:
+
+### New User Endpoint
+-  `POST '/api/v1/users'`
+<details>
+  <summary> Request body json </summary>
+  
+```json
+{
+    "email": "example_user@mail.com",
+    "password": "12345",
+    "password_confirmation": "12345"
+}
+```
+  
+</details>
+<details>
+  <summary> Successful response will look like:</summary>
+  
+```json
+{
+    "data": {
+        "type": "users",
+        "id": 3,
+        "attributes": {
+            "email": "example_user@mail.com",
+            "api_key": "1P5Wp3Tq52jWpAAbAWnzcq5h"
+        }
+    }
+}
+```
+  
+</details>
+
+### Road Trip Endpoint
+-  `POST '/api/v1/road_trip'`
+<details>
+  <summary> Request body json **API KEY REQUIRED** </summary>
+  
+```json
+{
+  "origin": "Denver,CO",
+  "destination": "Pueblo,CO",
+  "api_key": "1P5Wp3Tq52jWpAAbAWnzcq5h"
+}
+```
+  
+</details>
+<details>
+  <summary> Successful response will look like:</summary>
+  
+```json
+{
+    "data": {
+        "id": null,
+        "type": "roadtrip",
+        "attributes": {
+            "start_city": "Denver,CO",
+            "end_city": "Pueblo,CO",
+            "travel_time": "01:45:23",
+            "weather_at_eta": {
+                "temperature": 57.6,
+                "conditions": "broken clouds"
+            }
+        }
+    }
+}
+```
+  
+</details>
 
 ## Running the tests
 Run `bundle exec rspec` to run the test suite
