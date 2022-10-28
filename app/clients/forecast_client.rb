@@ -11,9 +11,7 @@ class ForecastClient
   end
 
   def self.get_forecast(lat, lng)
-    Rails.cache.fetch("forecast-#{lat}-#{lng}", expires_in: 3600) do
-      response = get_url('/data/2.5/onecall', lat, lng)
-      JSON.parse(response.body, symbolize_names: true)
-    end
+    response = get_url('/data/2.5/onecall', lat, lng)
+    JSON.parse(response.body, symbolize_names: true)
   end
 end
