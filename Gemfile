@@ -42,6 +42,7 @@ group :test do
   gem 'faker'
   gem 'jsonapi-serializer'
   gem 'rspec-rails'
+  gem 'rubocop'
   gem 'shoulda-matchers', '~> 3.1'
   gem 'simplecov'
   gem 'vcr'
