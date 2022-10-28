@@ -10,12 +10,12 @@ location or where you plan on traveling to next. This application expose four in
 ## Deployment
 * http://localhost:3000
 
-## INTERVIEWER 
-* start server 
-``` 
+## INTERVIEWER
+* start server
+```
 $ rails s
-``` 
-* Use below postman collection to get endpoints 
+```
+* Use below postman collection to get endpoints
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/b8ff93e51a5d15f17c03?action=collection%2Fimport)
 
 ## Technologies
@@ -36,13 +36,26 @@ $ rails s
 3. Setup the database: `rails db:create`
 4. Run migrations: ` rails db:migrate`
 6. Create an account with [OpenWeather API](https://home.openweathermap.org/users/sign_up) and request an API key
-7. Create an account with [Pexels](https://www.farmsense.net/api/frost-date-api/)
+7. Create an account with [Pexels](https://www.pexels.com/api/) and request an API key
+8. Create an account with [Mapquest API](https://developer.mapquest.com/documentation/open/directions-api/)
 9. Install the Figaro gem: `bundle exec figaro install`
 10. Add your API key to the `application.yml` created by Figaro:
   ```yml
-  OPENWEATHER_KEY: your_api_key
-  PEXELS_KEY: your_api_key
+  weather_api_key: your_api_key
+  map_api_key: your_api_key
+  photo_api_key: your_api_key
   ```
+## INTERVIEWER 
+* After adding api keys to your application.yml file listed below
+
+* start server 
+``` 
+$ rails s
+``` 
+* Use below postman collection to get endpoints
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/b8ff93e51a5d15f17c03?action=collection%2Fimport)
+
 
 ## Running the tests
 Run `bundle exec rspec` to run the test suite
